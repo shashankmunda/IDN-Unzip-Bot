@@ -3,7 +3,7 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt update && apt upgrade -y
-RUN apt install python3-pip zstd p7zip-full p7zip-rar -y
+RUN apt install python3-pip zstd p7zip-full p7zip-rar -y pipx
 RUN pip3 install -U pip
 RUN mkdir /app/
 WORKDIR /app/
