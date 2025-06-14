@@ -8,5 +8,5 @@ RUN pipx install pip
 RUN mkdir /app/
 WORKDIR /app/
 COPY . /app/
-RUN pip3 install -U -r requirements.txt
+RUN pipx install -r requirements.txt
 CMD bash start.sh
