@@ -9,5 +9,5 @@ RUN mkdir /app/
 WORKDIR /app/
 COPY . /app/
 RUN pipx install cookiecutter
-RUN pipx run cookiecutter install -r requirements.txt
+RUN pipx runpip cookiecutter install -r requirements.txt
 CMD bash start.sh
